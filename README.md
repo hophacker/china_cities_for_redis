@@ -1,8 +1,15 @@
-Data setup for pairyo
+中国城市三级联动菜单 (Redis)
 ==
 
-before start
---
+开发中经常遇到城市三级联动菜单的问题。我的解决办法是将这些数据存在redis中，然后处理，既不需要前端存储大量数据，又能保障查询速度。
+
+这个Repo负责将该数据初始化到Redis中。
+
+而此Ropo的城市数据来源于京东(jd.com)。
+
+
+运行
+==
 ```
 npm install
 ```
@@ -21,6 +28,5 @@ All data
 
 ```
 ```
-
 [places.json]: ./places.json
 [places_parser.js]: ./places_parser.js
